@@ -1,0 +1,2 @@
+rootProject.name = "DHT11_SQLite"
+include ':app'

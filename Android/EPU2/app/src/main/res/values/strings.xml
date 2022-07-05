@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EP_U2</string>
+    <string name="strConten">IMAGEN</string>
+    <string name="strDesc">Salir</string>
+    <string name="strEscribrir">Escriba un Texto</string>
+    <string name="strResp">Respuesta</string>
+    <string name="tv_etiq_temp_str">Temperatura: </string>
+    <string name="tv_etiq_hum_str">Humedad: </string>
+    <string name="tv_etiq_fec_hr_str">Fecha y Hora: </string>
+    <string name="tv_temperatura_str">Temperatura</string>
+    <string name="tv_humedad_str">Humedad: </string>
+    <string name="tv_fecha_hora_str">mm/dd/aaaa</string>
+    <string name="btn_generar_datos">Generar</string>
+    <string name="btn_guardar_datos">Guardar</string>
+    <string name="btn_consultar_datos">Consultar Registros</string>
+    <string name="btn_historialTemp">Historial Temperatura</string>
+    <string name="btn_historialHum">Historial Humedad</string>
+
+    <string name="tv_ultimoReg">ULTIMO REGISTRO:.</string>
+</resources>

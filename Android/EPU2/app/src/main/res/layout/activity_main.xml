@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnDesconectar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/strDesc"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_graphHump" />
+
+    <TextView
+        android:id="@+id/tv_etiq_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F6D5D5"
+        android:text="@string/tv_etiq_temp_str"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_etiq_hum" />
+
+    <TextView
+        android:id="@+id/tv_etiq_hum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F6D5D5"
+        android:text="@string/tv_etiq_hum_str"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_etiq_fec_hr" />
+
+    <TextView
+        android:id="@+id/tv_etiq_fec_hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#F6D5D5"
+        android:text="@string/tv_etiq_fec_hr_str"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ultimoReg" />
+
+    <TextView
+        android:id="@+id/tv_temperatura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_temperatura_str"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_etiq_temp"
+        app:layout_constraintTop_toTopOf="@+id/tv_etiq_temp" />
+
+    <TextView
+        android:id="@+id/tv_humedad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_humedad_str"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_etiq_hum"
+        app:layout_constraintTop_toTopOf="@+id/tv_etiq_hum" />
+
+    <TextView
+        android:id="@+id/tv_fecha_hora"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/tv_fecha_hora_str"
+        android:paddingLeft="10dp"
+        android:text="@string/tv_fecha_hora_str"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_etiq_fec_hr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_etiq_fec_hr" />
+
+    <Button
+        android:id="@+id/btn_consultar_datos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="@string/btn_consultar_datos"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_etiq_temp" />
+
+    <Button
+        android:id="@+id/btn_graphTemp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_historialTemp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_consultar_datos" />
+
+    <Button
+        android:id="@+id/btn_graphHump"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_historialHum"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_graphTemp" />
+
+    <TextView
+        android:id="@+id/txt_ultimoReg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#C67A7A"
+        android:text="@string/tv_ultimoReg"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMensaje"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="#80D1CB"
+        android:text="Esperando nueva lectura..."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDesconectar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
